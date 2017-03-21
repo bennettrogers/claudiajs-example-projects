@@ -8,7 +8,7 @@ if [ ! -n "$API_ID" ]; then
 fi
 
 curl -H 'Content-Type: application/graphql' -X POST \
-  'https://'${API_ID}'.execute-api.us-east-1.amazonaws.com/latest/graphql' \
+  'https://'${API_ID}'.execute-api.us-west-2.amazonaws.com/latest/graphql' \
   -d 'mutation {
         addUser (userid:"4", name:"Mary Lamb", age:25) {
             userid name age
@@ -18,7 +18,7 @@ curl -H 'Content-Type: application/graphql' -X POST \
 echo
 
 curl -H 'Content-Type: application/graphql' -X POST \
-  'https://'${API_ID}'.execute-api.us-east-1.amazonaws.com/latest/graphql' \
+  'https://'${API_ID}'.execute-api.us-west-2.amazonaws.com/latest/graphql' \
   -d 'mutation {
         addUser (userid:"2", name:"John Doe", age:29) {
             userid name age

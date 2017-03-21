@@ -7,7 +7,7 @@ if [ ! -n "$API_ID" ]; then
 fi
 
 curl -H 'Content-Type: application/graphql' -X POST \
-  'https://'${API_ID}'.execute-api.us-east-1.amazonaws.com/latest/graphql' \
+  'https://'${API_ID}'.execute-api.us-west-2.amazonaws.com/latest/graphql' \
   -d 'mutation {
         deleteUser (userid:"4") {
             userid name age

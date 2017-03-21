@@ -8,4 +8,4 @@ fi
 
 curl -H 'Content-Type: application/graphql' -X POST \
   -d '{user {userid name age}}' \
-  'https://'${API_ID}'.execute-api.us-east-1.amazonaws.com/latest/graphql'
+  'https://'${API_ID}'.execute-api.us-west-2.amazonaws.com/latest/graphql'
